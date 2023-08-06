@@ -10,7 +10,6 @@ packages = [{include = "src"}]
 python = "^3.10"
 fastapi = "^0.100.1"
 gunicorn = "^21.2.0"
-databases = "^0.7.0"
 pydantic-settings = "^2.0.2"
 async-cache = "^1.1.1"
 uvicorn = "^0.23.2"

@@ -321,30 +321,6 @@ tomli = {version = "*", optional = true, markers = "python_full_version <= \"3.1
 toml = ["tomli"]
 
 [[package]]
-name = "databases"
-version = "0.7.0"
-description = "Async database support for Python."
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "databases-0.7.0-py3-none-any.whl", hash = "sha256:cf5da4b8a3e3cd038c459529725ebb64931cbbb7a091102664f20ef8f6cefd0d"},
-    {file = "databases-0.7.0.tar.gz", hash = "sha256:ea2d419d3d2eb80595b7ceb8f282056f080af62efe2fb9bcd83562f93ec4b674"},
-]
-
-[package.dependencies]
-sqlalchemy = ">=1.4.42,<1.5"
-
-[package.extras]
-aiomysql = ["aiomysql"]
-aiopg = ["aiopg"]
-aiosqlite = ["aiosqlite"]
-asyncmy = ["asyncmy"]
-asyncpg = ["asyncpg"]
-mysql = ["aiomysql"]
-postgresql = ["asyncpg"]
-sqlite = ["aiosqlite"]
-
-[[package]]
 name = "decorator"
 version = "5.1.1"
 description = "Decorators for Humans"
@@ -1535,4 +1511,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f6fafd9612a5dee4def53f25b80ec86d96c50fda0618b8b09e5cb525b9c258f3"
+content-hash = "54f3bf1631fea7290be5f95427e75405f557dc1f3356b8a4cd870374fa354378"
