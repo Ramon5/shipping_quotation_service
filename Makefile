@@ -52,4 +52,4 @@ export_requirements:
 ###@ Run application
 
 run: ## run application containers
-	docker-compose up -d
+	docker-compose up

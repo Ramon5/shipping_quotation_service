@@ -62,7 +62,7 @@ Exemplo para execução dos testes unitários:
 
 para executar os containers da aplicação rode o comando:
 
-```$ docker-compose up -d```
+```$ docker-compose up```
 
 Esse comando irá subir os containers da api e do banco de dados PostgreSQL
 

@@ -25,7 +25,7 @@ async def create_shipping_data(
 
 
 @router.post("/quotation")
-async def query_shipping_quoation(
+async def query_shipping_quotation(
     shipping_request: ShippingRequestDTO,
     session: AsyncSession = Depends(get_db_session),
 ) -> Optional[List[ShippingOutputDTO]]:
