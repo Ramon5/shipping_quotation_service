@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "shipping-quotation-service"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.100.1"
+gunicorn = "^21.2.0"
+pydantic-settings = "^2.0.2"
+async-cache = "^1.1.1"
+uvicorn = "^0.23.2"
+alembic = "^1.11.1"
+asyncpg = "^0.28.0"
+httpx = "^0.24.1"
+pre-commit = "^3.3.3"
+
+[tool.isort]
+profile="black"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.14.0"
+pytest-asyncio = "^0.21.1"
+
+
+[tool.poetry.group.lint.dependencies]
+isort = "^5.12.0"
+black = "^23.7.0"
+flake8 = "^6.1.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+pytest-mock = "^3.11.1"
+pytest-asyncio = "^0.21.1"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
