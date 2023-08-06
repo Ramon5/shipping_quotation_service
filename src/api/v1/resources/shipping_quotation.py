@@ -8,7 +8,7 @@ from src.domains.shipping.controller import ShippingController
 from src.domains.shipping.dtos import (
     ShippingInputDTO,
     ShippingOutputDTO,
-    ShippingRequestDTO
+    ShippingRequestDTO,
 )
 from src.domains.shipping.repository import ShippingRepository
 from src.infra.database.session import get_db_session

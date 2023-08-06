@@ -1,5 +1,3 @@
-from typing import Optional
-
 from pydantic import BaseModel, conint
 
 
@@ -17,6 +15,7 @@ class ShippingOutputDTO(BaseModel):
     name: str
     value: float
     shipping_deadline: int
+
 
 class ShippingInputDTO(BaseModel):
     name: str

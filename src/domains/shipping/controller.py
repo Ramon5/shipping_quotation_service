@@ -3,7 +3,7 @@ from typing import List, Optional
 from src.domains.shipping.dtos import (
     ShippingInputDTO,
     ShippingOutputDTO,
-    ShippingRequestDTO
+    ShippingRequestDTO,
 )
 from src.domains.shipping.models import Shipping
 from src.infra.database.repository.repository import IRepository

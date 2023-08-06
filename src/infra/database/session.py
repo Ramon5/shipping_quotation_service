@@ -1,8 +1,7 @@
 from typing import AsyncGenerator
 
 import databases
-from sqlalchemy import text
-from sqlalchemy.ext.asyncio import AsyncSession, AsyncEngine,create_async_engine
+from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 
 from src.config.settings import settings
@@ -18,6 +17,7 @@ async def init_db() -> None:
     async with engine.begin() as conn:
         # await conn.run_sync(ITable.metadata.drop_all)
         await conn.run_sync(ITable.metadata.create_all)
+
 
 async def close_connection() -> None:
     await database.disconnect()
