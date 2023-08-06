@@ -29,4 +29,4 @@ jobs:
 
       - name: Deploy on Cloud
         run: |
-          echo work in progress :)
+          echo "work in progress :)"

@@ -33,6 +33,8 @@ $ cp local.env .env
 $ cp local.db.env .db.env
 ```
 
+Obs: Defina usuário e senha para o banco de dados
+
 ### Criando o ambiente virtual e instalando as dependências
 
 
