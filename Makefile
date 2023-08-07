@@ -53,3 +53,6 @@ export_requirements:
 
 run: ## run application containers
 	docker-compose up
+
+initial_load:
+	docker-compose run api python -m src.scripts.initial_load

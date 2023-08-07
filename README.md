@@ -29,7 +29,7 @@ O projeto possui dois arquivos de variáveis de ambiente: local.env e local.db.e
 No terminal faça:
 
 ```
-$ cp local.env .env 
+$ cp local.env .env
 $ cp local.db.env .db.env
 ```
 
@@ -65,6 +65,12 @@ para executar os containers da aplicação rode o comando:
 ```$ docker-compose up```
 
 Esse comando irá subir os containers da api e do banco de dados PostgreSQL
+
+### Carga inicial para o teste da API
+
+Rode o comando para gravar duas modalidades de frete no banco de dados. Existe o endpoint de criação também para caso haja necessidade de acrescentar mais modalidades.
+
+```$ make initial_load```
 
 ### Documentação dos Endpoints
 
