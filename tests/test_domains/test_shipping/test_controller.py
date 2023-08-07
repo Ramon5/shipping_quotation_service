@@ -41,7 +41,9 @@ def test_calculate_shipping_price(
 async def test_get_shipping_quotation_without_result(
     mocker: MockerFixture, controller: ShippingController
 ) -> None:
-    mock_db = mocker.patch.object(ShippingRepository, "query_shipping")
+    mock_db = mocker.patch.object(
+        ShippingRepository, "query_shipping", return_value=None
+    )
     shipping_request = ShippingRequestDTO(
         dimension={"height": 102, "width": 50}, weight=400
     )

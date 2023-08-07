@@ -74,4 +74,4 @@ http://0.0.0.0/docs
 
 ### Melhorias mapeadas
 
-Implementar as outras opções de CRUD, criar pipelines como pull request semantico, release e um pipeline orquestrador para encadear as execuções de acordo com as prioridades.
+Implementar as outras opções de CRUD, isolar os pipelines de ci/cd e acrescentar pull request semantico, release e um pipeline orquestrador para encadear as execuções de acordo com as prioridades.
