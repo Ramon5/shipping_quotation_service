@@ -13,8 +13,6 @@ async_session = sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=
 
 async def init_db() -> None:
     async with engine.begin() as conn:
-        # If need reset db created indexes and metadata
-        # await conn.run_sync(ITable.metadata.drop_all)
         await conn.run_sync(ITable.metadata.create_all)
 
 
