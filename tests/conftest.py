@@ -1,4 +1,3 @@
-import os
 from typing import Callable
 
 import httpx
@@ -13,7 +12,6 @@ from src.domains.shipping.dtos import ShippingInputDTO, ShippingOutputDTO
 @pytest.fixture(autouse=True)
 def config():
     settings.DB_URL = "postgresql+asyncpg://test:test@database:5432/testdb"
-    
 
 
 @pytest_asyncio.fixture
