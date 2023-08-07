@@ -42,9 +42,7 @@ unit-test-cov-fail:
 
 clean-cov:
 	@rm -rf .coverage
-	@rm -rf htmlcov
-	@rm -rf pytest.xml
-	@rm -rf pytest-coverage.txt
+	@rm -rf coverage.xml
 
 export_requirements:
 	poetry export -f requirements.txt --without-hashes > requirements.txt
