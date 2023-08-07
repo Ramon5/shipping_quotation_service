@@ -8,7 +8,7 @@ on:
   workflow_call:
 
 env:
-  DB_URL: "postgresql"
+  DB_URL: "postgresql+asyncpg://test:test@database:5432/testdb"
 
 jobs:
   Linting:

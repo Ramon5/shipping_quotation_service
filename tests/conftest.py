@@ -6,13 +6,14 @@ import pytest
 import pytest_asyncio
 
 from src.app import create_app
+from src.config.settings import settings
 from src.domains.shipping.dtos import ShippingInputDTO, ShippingOutputDTO
 
 
 @pytest.fixture(autouse=True)
-def config(monkeypatch):
-    monkeypatch.setenv("SQLALCHEMY_SILENCE_UBER_WARNING", "1")
-    os.environ["SQLALCHEMY_SILENCE_UBER_WARNING"] = "1"
+def config():
+    settings.DB_URL = "postgresql+asyncpg://test:test@database:5432/testdb"
+    
 
 
 @pytest_asyncio.fixture
