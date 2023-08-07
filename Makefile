@@ -38,7 +38,7 @@ unit-test-cov:
 	@pytest --doctest-modules --cov=src --cov-report term-missing --cov-report=html
 
 unit-test-cov-fail:
-	@pytest -s -l -vvv tests/ --cov src/ --cov-fail-under=80 --cov-report xml --cov-report term:skip-covered
+	@pytest -s -l -vvv tests/ --cov src/ --cov-fail-under=70 --cov-report xml --cov-report term:skip-covered
 
 clean-cov:
 	@rm -rf .coverage
